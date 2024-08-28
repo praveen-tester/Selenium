@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="Picassoweb.Website">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="Topnavigationvalidation"/>
+        </methods>
+      </class> <!-- Picassoweb.Website -->
+      <class name="Picassoweb.BrokenLinks">
+        <methods>
+          <include name="totalcount"/>
+          <include name="totalink"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Picassoweb.BrokenLinks -->
+      <class name="Picassoweb.CreateProject">
+        <methods>
+          <include name="setup"/>
+          <include name="Signin"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Picassoweb.CreateProject -->
+      <class name="Picassoweb.TopNavigation">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="topnav"/>
+        </methods>
+      </class> <!-- Picassoweb.TopNavigation -->
+      <class name="Picassoweb.AcreAndCents">
+        <methods>
+          <include name="acrecents"/>
+        </methods>
+      </class> <!-- Picassoweb.AcreAndCents -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
